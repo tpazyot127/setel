@@ -23,7 +23,6 @@ ReactDOM.render(
         </Routes>
       </div>
     </BrowserRouter>
-    ,
   </React.StrictMode>,
   document.getElementById("root")
 );

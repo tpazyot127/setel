@@ -1,56 +1,52 @@
-import { Table, Tag, Space } from 'antd';
-import productImg from '../../assets/images/testjpg.jpg';
-import { Row, Col } from 'antd';
-import { PlusOutlined } from "@ant-design/icons"
-import { Button, Tooltip } from 'antd';
-import {
-  BrowserRouter as Router,
-  Route,
-  Link
-} from "react-router-dom";
-import WraperApp from '../../components/WraperApp';
+import { Table, Tag, Space } from "antd";
+import productImg from "../../assets/images/testjpg.jpg";
+import { Row, Col } from "antd";
+import { PlusOutlined } from "@ant-design/icons";
+import { Button, Tooltip } from "antd";
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import WraperApp from "../../components/WraperApp";
 
 const { Column } = Table;
 const data = [
   {
-    key: '1',
+    key: "1",
     image: { productImg },
-    title: 'Sản phẩm 03',
+    title: "Sản phẩm 03",
     email: "luonghop.it@gmail.com",
-    categories: 'Nội thất',
-    date: "18-03-2021"
+    categories: "Nội thất",
+    date: "18-03-2021",
   },
   {
-    key: '2',
+    key: "2",
     image: { productImg },
-    title: 'Sản phẩm 02',
+    title: "Sản phẩm 02",
     email: "luonghop.it@gmail.com",
-    categories: 'Nội thất',
-    date: "18-03-2021"
+    categories: "Nội thất",
+    date: "18-03-2021",
   },
   {
-    key: '3',
+    key: "3",
     image: { productImg },
-    title: 'Bộ bàn ghế 04',
+    title: "Bộ bàn ghế 04",
     email: "luonghop.it@gmail.com",
-    categories: 'Nội thất',
-    date: "18-03-2021"
+    categories: "Nội thất",
+    date: "18-03-2021",
   },
   {
-    key: '4',
+    key: "4",
     image: { productImg },
-    title: 'Bộ bàn ghế 05',
+    title: "Bộ bàn ghế 05",
     email: "luonghop.it@gmail.com",
-    categories: 'Nội thất',
-    date: "18-03-2021"
+    categories: "Nội thất",
+    date: "18-03-2021",
   },
   {
-    key: '5',
+    key: "5",
     image: { productImg },
-    title: 'Sản phẩm 01',
+    title: "Sản phẩm 01",
     email: "luonghop.it@gmail.com",
-    categories: 'Nội thất',
-    date: "18-03-2021"
+    categories: "Nội thất",
+    date: "18-03-2021",
   },
 ];
 function ListProducts() {
@@ -59,9 +55,16 @@ function ListProducts() {
       <Row>
         <Col lg={20}></Col>
         <Col lg={4}>
-          <Link to="/product/add"><Button type="primary" shape="round" icon={<PlusOutlined />}>
-            Thêm mới sản phẩm
-          </Button></Link>
+          <Link to="/product/add">
+            <Button
+              className="main-btn"
+              type="primary"
+              shape="round"
+              icon={<PlusOutlined />}
+            >
+              Thêm mới sản phẩm
+            </Button>
+          </Link>
         </Col>
       </Row>
       <Table dataSource={data}>
@@ -74,4 +77,4 @@ function ListProducts() {
     </WraperApp>
   );
 }
-export default ListProducts
+export default ListProducts;

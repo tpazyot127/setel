@@ -28,14 +28,8 @@ function WraperApp(props: any) {
       >
         <div className="logo" />
         <Menu theme="dark" mode="inline" defaultSelectedKeys={["4"]}>
-          <Menu.Item key="1" icon={<HomeOutlined />}>
-            <Link to="/">Trang Chủ</Link>
-          </Menu.Item>
-          <Menu.Item key="2" icon={<UserOutlined />}>
-            <Link to="/posts">Trang Bài Viết</Link>
-          </Menu.Item>
           <Menu.Item key="3" icon={<VideoCameraOutlined />}>
-            <Link to="/products">Trang Sản Phẩm</Link>
+            <Link to="/">Trang Sản Phẩm</Link>
           </Menu.Item>
         </Menu>
       </Sider>

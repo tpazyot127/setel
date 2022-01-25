@@ -44,7 +44,6 @@ const data = [
     status: "Đang hoạt động"
 
   }
-
 ]
 
 function ListProductsCategories() {
